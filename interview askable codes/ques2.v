@@ -1,7 +1,8 @@
 // EDA Playground Link: https://www.edaplayground.com/x/s4gd
 module tb();
   real real_var;
-  integer integer_var;
+  integer integer_var, integer_var1, integer_var2;
+  reg [7:0]reg_a, reg_b;
   
   initial
     begin
@@ -19,6 +20,14 @@ module tb();
       $display("%%4d = %4d",integer_var);
       $display("%%9d = %9d",integer_var);
       $display("%%19d = %19d",integer_var);
+      
+      integer_var1 = -6'd3;
+      integer_var2 = -6'sd3;
+      $display("%b %b",integer_var1, integer_var2);
+      
+      reg_a = -6'd3;
+      reg_b = -6'sd3;
+      $display("%b %b", reg_a, reg_b);
     end
 endmodule
 
@@ -34,4 +43,6 @@ endmodule
 # %4d =   23
 # %9d =        23
 # %19d =                  23
+# 11111111111111111111111111111101 11111111111111111111111111111101
+# 11111101 11111101
 */
