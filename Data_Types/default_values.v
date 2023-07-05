@@ -1,7 +1,7 @@
 // Data Types in Verilog:
 // Verilog supports mainly 4 data types: Nets, Registers, Strings, Real
 
-module datatypes();
+module datatypes_def_val();
   wire wire_var;
   reg reg_var;
   integer integer_var;
