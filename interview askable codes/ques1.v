@@ -1,3 +1,4 @@
+// EDA Playground Link: https://www.edaplayground.com/x/7xSk
 module ques1;
 integer a = 1'bx;
 integer b = 1'bz;
