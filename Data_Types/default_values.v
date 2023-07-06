@@ -17,3 +17,12 @@ module datatypes_def_val();
       // Default values: wire = z reg = x integer = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx string = xxxxxxxxxxxxxxxx real = 0.000000 time = 0
     end
 endmodule
+
+/* Size of datatypes:
+  wire       => 1 bit    => unsigned
+  reg        => 1 bit    => unsigned
+  integer    => 32 bits  => signed
+  time       => 32 bits  => unsigned
+  real       => 64 bits  => signed
+  real time  => 64 bits  => unsigned
+*/
