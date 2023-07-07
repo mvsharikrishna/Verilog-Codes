@@ -8,15 +8,12 @@ module basic_gates_behav(input a_in,
                          output nor_out,
                          output xor_out,
                          output xnor_out);
-  always@(a,b)
-    begin
-      not_out = ~a_in;
-      buf_out = a_in;
-      and_out = a & b;
-      or_out = a | b;
-      nand_out = ~(a&b);
-      nor_out = ~(a|b);
-      xor_out = a^b;
-      xnor_out = ~(a^b);
-    end
+  assign not_out = ~a_in;
+  assign buf_out = a_in;
+  assign and_out = a & b;
+  assign or_out = a | b;
+  assign nand_out = ~(a&b);
+  assign nor_out = ~(a|b);
+  assign xor_out = a^b;
+  assign xnor_out = ~(a^b);
 endmodule
