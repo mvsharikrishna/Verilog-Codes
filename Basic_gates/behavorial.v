@@ -1,13 +1,13 @@
 module basic_gates_behav(input a_in,
                          input b_in,
-                         output not_out,
-                         output buf_out,
-                         output and_out,
-                         output or_out,
-                         output nand_out,
-                         output nor_out,
-                         output xor_out,
-                         output xnor_out);
+                         output reg not_out,
+                         output reg buf_out,
+                         output reg and_out,
+                         output reg or_out,
+                         output reg nand_out,
+                         output reg nor_out,
+                         output reg xor_out,
+                         output reg xnor_out);
 // consider not_out = ~a, buf_out = a
   always@(a,b)
     begin
